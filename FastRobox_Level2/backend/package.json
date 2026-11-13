@@ -1,0 +1,9 @@
+{
+  "name": "fastrobox-level2-api",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "engines": {"node": ">=20"},
+  "scripts": {"start": "node server.js", "check": "node --check server.js"},
+  "dependencies": {"express": "^4.21.2", "pg": "^8.13.3", "helmet": "^8.0.0"}
+}

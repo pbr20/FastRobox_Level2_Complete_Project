@@ -1,0 +1,17 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Smart Classroom | Live Dashboard</title><link rel="stylesheet" href="/style.css"></head><body>
+<header><div><small>FASTROBOX • LEVEL 2</small><h1>Smart Classroom</h1><p>Real-time device monitoring • Asia/Dhaka</p></div><div id="live" class="badge">CONNECTING</div></header>
+<main><section class="cards">
+<article><span>Temperature</span><strong id="temp">—</strong><small>°C</small></article>
+<article><span>Humidity</span><strong id="rh">—</strong><small>% RH</small></article>
+<article><span>Flame</span><strong id="flame">—</strong><small>Sensor reading</small></article>
+<article><span>Classroom status</span><strong id="status">—</strong><small>Overall state</small></article>
+</section>
+<section class="pane"><h2>Device details</h2><dl>
+<div><dt>Device ID</dt><dd id="device">—</dd></div><div><dt>Room</dt><dd id="room">—</dd></div>
+<div><dt>Door</dt><dd id="door">—</dd></div><div><dt>Wi-Fi RSSI</dt><dd id="rssi">—</dd></div>
+<div><dt>Chip temp</dt><dd id="chip">—</dd></div><div><dt>Last reading</dt><dd id="last">—</dd></div>
+</dl></section>
+<section class="pane"><h2>Latest sensor readings</h2><div class="table-scroll"><table><thead><tr><th>Time</th><th>°C</th><th>Humidity</th><th>Flame</th><th>Status</th></tr></thead><tbody id="rows"><tr><td colspan="5">Waiting for data…</td></tr></tbody></table></div></section>
+<section class="pane"><h2>Recent events</h2><ul id="events"><li>No events yet</li></ul></section>
+<footer>Auto-refreshes every 2 seconds. Offline if telemetry has stopped for 30 seconds. <span id="error"></span></footer>
+</main><script src="/app.js" defer></script></body></html>
